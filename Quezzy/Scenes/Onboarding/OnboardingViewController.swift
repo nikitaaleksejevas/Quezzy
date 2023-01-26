@@ -41,9 +41,14 @@ class OnboardingViewController: UIViewController {
     //MARK: -Actions
     
     @IBAction private func signUpTapped(_ sender: Any) {
+        let registrationVC = RegistrationViewController()
+        present(registrationVC, animated: true)
+        
     }
     
     @IBAction private func loginTapped(_ sender: Any) {
+        let loginVC = LoginViewController()
+        present(loginVC, animated: true)
     }
     
     //MARK: -Functions

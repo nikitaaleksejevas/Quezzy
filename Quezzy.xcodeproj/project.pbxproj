@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		114B29B829828E2600BA5455 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B29B629828E2600BA5455 /* OnboardingCollectionViewCell.swift */; };
 		114B29B929828E2600BA5455 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114B29B729828E2600BA5455 /* OnboardingCollectionViewCell.xib */; };
+		114B29BD2982A5E200BA5455 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B29BB2982A5E200BA5455 /* LoginViewController.swift */; };
+		114B29BE2982A5E200BA5455 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114B29BC2982A5E200BA5455 /* LoginViewController.xib */; };
+		114B29C12982A60000BA5455 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B29BF2982A60000BA5455 /* RegistrationViewController.swift */; };
+		114B29C22982A60000BA5455 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114B29C02982A60000BA5455 /* RegistrationViewController.xib */; };
 		119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C84B6298269E3007A0703 /* OnboardingViewController.swift */; };
 		119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C84B7298269E3007A0703 /* OnboardingViewController.xib */; };
 		119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		114B29B629828E2600BA5455 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		114B29B729828E2600BA5455 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		114B29BB2982A5E200BA5455 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		114B29BC2982A5E200BA5455 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		114B29BF2982A60000BA5455 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		114B29C02982A60000BA5455 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		119C84B6298269E3007A0703 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		119C84B7298269E3007A0703 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-VariableFont_wght.ttf"; path = "assets/Rubik-VariableFont_wght.ttf"; sourceTree = SOURCE_ROOT; };
@@ -45,10 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114B29BA2982A57F00BA5455 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				114B29BB2982A5E200BA5455 /* LoginViewController.swift */,
+				114B29BC2982A5E200BA5455 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		114B29C42982A61400BA5455 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				114B29BF2982A60000BA5455 /* RegistrationViewController.swift */,
+				114B29C02982A60000BA5455 /* RegistrationViewController.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		119C84B4298269A6007A0703 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				119C84B5298269AC007A0703 /* Onboarding */,
+				114B29C42982A61400BA5455 /* Registration */,
+				114B29BA2982A57F00BA5455 /* Login */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -171,8 +199,10 @@
 			files = (
 				11EDDEAE2981480000022A3D /* LaunchScreen.storyboard in Resources */,
 				11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */,
+				114B29BE2982A5E200BA5455 /* LoginViewController.xib in Resources */,
 				119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */,
 				119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */,
+				114B29C22982A60000BA5455 /* RegistrationViewController.xib in Resources */,
 				114B29B929828E2600BA5455 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114B29BD2982A5E200BA5455 /* LoginViewController.swift in Sources */,
 				119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */,
 				11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */,
 				114B29B829828E2600BA5455 /* OnboardingCollectionViewCell.swift in Sources */,
+				114B29C12982A60000BA5455 /* RegistrationViewController.swift in Sources */,
 				119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */,
 				11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */,
 			);
