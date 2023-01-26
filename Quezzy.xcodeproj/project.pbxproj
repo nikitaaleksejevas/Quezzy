@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C84B6298269E3007A0703 /* OnboardingViewController.swift */; };
+		119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C84B7298269E3007A0703 /* OnboardingViewController.xib */; };
+		119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */; };
 		11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA1298147FE00022A3D /* AppDelegate.swift */; };
 		11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA3298147FE00022A3D /* SceneDelegate.swift */; };
-		11EDDEA6298147FE00022A3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA5298147FE00022A3D /* ViewController.swift */; };
-		11EDDEA9298147FE00022A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EDDEA7298147FE00022A3D /* Main.storyboard */; };
 		11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EDDEAA2981480000022A3D /* Assets.xcassets */; };
 		11EDDEAE2981480000022A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11EDDEAC2981480000022A3D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		119C84B6298269E3007A0703 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		119C84B7298269E3007A0703 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-VariableFont_wght.ttf"; path = "assets/Rubik-VariableFont_wght.ttf"; sourceTree = SOURCE_ROOT; };
 		11EDDE9E298147FE00022A3D /* Quezzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quezzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EDDEA1298147FE00022A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EDDEA3298147FE00022A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11EDDEA5298147FE00022A3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11EDDEA8298147FE00022A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11EDDEAA2981480000022A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11EDDEAD2981480000022A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11EDDEAF2981480000022A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119C84B4298269A6007A0703 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				119C84B5298269AC007A0703 /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		119C84B5298269AC007A0703 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				119C84B6298269E3007A0703 /* OnboardingViewController.swift */,
+				119C84B7298269E3007A0703 /* OnboardingViewController.xib */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		11EDDE95298147FE00022A3D = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +75,13 @@
 		11EDDEA0298147FE00022A3D /* Quezzy */ = {
 			isa = PBXGroup;
 			children = (
+				119C84B4298269A6007A0703 /* Scenes */,
 				11EDDEA1298147FE00022A3D /* AppDelegate.swift */,
 				11EDDEA3298147FE00022A3D /* SceneDelegate.swift */,
-				11EDDEA5298147FE00022A3D /* ViewController.swift */,
-				11EDDEA7298147FE00022A3D /* Main.storyboard */,
 				11EDDEAA2981480000022A3D /* Assets.xcassets */,
 				11EDDEAC2981480000022A3D /* LaunchScreen.storyboard */,
 				11EDDEAF2981480000022A3D /* Info.plist */,
+				119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */,
 			);
 			path = Quezzy;
 			sourceTree = "<group>";
@@ -127,7 +146,8 @@
 			files = (
 				11EDDEAE2981480000022A3D /* LaunchScreen.storyboard in Resources */,
 				11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */,
-				11EDDEA9298147FE00022A3D /* Main.storyboard in Resources */,
+				119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */,
+				119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11EDDEA6298147FE00022A3D /* ViewController.swift in Sources */,
 				11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */,
+				119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */,
 				11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11EDDEA7298147FE00022A3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11EDDEA8298147FE00022A3D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11EDDEAC2981480000022A3D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +304,7 @@
 				INFOPLIST_FILE = Quezzy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +330,7 @@
 				INFOPLIST_FILE = Quezzy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
