@@ -16,8 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Quezzy" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="2l9-Gu-zT2" id="EeQ-oy-n4Z"/>
-                <outlet property="mainView" destination="2l9-Gu-zT2" id="Lao-3d-haB"/>
+                <outlet property="collectionView" destination="nNq-N4-OFw" id="YVv-3C-xf9"/>
+                <outlet property="descriptionLabel" destination="5TN-9C-K1b" id="9Xf-sD-RA3"/>
+                <outlet property="mainView" destination="uiv-TI-mCq" id="yYF-It-fVV"/>
                 <outlet property="pageControl" destination="SU3-gv-JXc" id="A32-cv-J2L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,7 +34,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiv-TI-mCq">
                     <rect key="frame" x="16" y="578" width="361" height="224"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create gamified quizzes becomes simple" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-9C-K1b">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTTESTTESTTESTTEST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TN-9C-K1b">
                             <rect key="frame" x="34" y="16" width="293" height="57"/>
                             <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="24"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -95,10 +96,10 @@
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="SU3-gv-JXc">
                     <rect key="frame" x="138.66666666666666" y="527" width="115.66666666666666" height="26"/>
                 </pageControl>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-Gu-zT2">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nNq-N4-OFw">
                     <rect key="frame" x="16" y="109" width="361" height="368"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4CO-VI-dew">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5FB-In-DIY">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -109,19 +110,19 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.41568627450000001" green="0.35294117650000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nNq-N4-OFw" secondAttribute="trailing" constant="16" id="1O7-Nz-fWD"/>
                 <constraint firstItem="uiv-TI-mCq" firstAttribute="top" secondItem="SU3-gv-JXc" secondAttribute="bottom" constant="25" id="1YA-YP-af9"/>
-                <constraint firstItem="SU3-gv-JXc" firstAttribute="top" secondItem="2l9-Gu-zT2" secondAttribute="bottom" constant="50" id="2Ah-Rj-o1c"/>
                 <constraint firstItem="40X-C6-ED9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3RO-Wc-bGj"/>
                 <constraint firstItem="40X-C6-ED9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5tz-Gj-vjD"/>
                 <constraint firstItem="SU3-gv-JXc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7bW-P0-xJj"/>
                 <constraint firstItem="uiv-TI-mCq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Bg9-7B-0kV"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2l9-Gu-zT2" secondAttribute="trailing" constant="16" id="C6F-E9-eS4"/>
+                <constraint firstItem="nNq-N4-OFw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Dj9-Pn-9zO"/>
                 <constraint firstAttribute="bottom" secondItem="40X-C6-ED9" secondAttribute="bottom" id="EFI-rx-kS7"/>
-                <constraint firstItem="2l9-Gu-zT2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Jup-Hi-zhU"/>
+                <constraint firstItem="nNq-N4-OFw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ih3-sR-C3R"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="40X-C6-ED9" secondAttribute="trailing" id="Nn6-i4-IXK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uiv-TI-mCq" secondAttribute="trailing" constant="16" id="QmC-DD-lvz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uiv-TI-mCq" secondAttribute="bottom" constant="16" id="eek-yK-laD"/>
-                <constraint firstItem="2l9-Gu-zT2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="inj-Z9-CTT"/>
+                <constraint firstItem="SU3-gv-JXc" firstAttribute="top" secondItem="nNq-N4-OFw" secondAttribute="bottom" constant="50" id="ij2-ET-KYC"/>
             </constraints>
             <point key="canvasLocation" x="76" y="21"/>
         </view>

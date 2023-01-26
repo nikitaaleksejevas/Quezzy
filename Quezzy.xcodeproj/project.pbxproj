@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114B29B829828E2600BA5455 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B29B629828E2600BA5455 /* OnboardingCollectionViewCell.swift */; };
+		114B29B929828E2600BA5455 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114B29B729828E2600BA5455 /* OnboardingCollectionViewCell.xib */; };
 		119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C84B6298269E3007A0703 /* OnboardingViewController.swift */; };
 		119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C84B7298269E3007A0703 /* OnboardingViewController.xib */; };
 		119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */; };
+		119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C84BD29827C35007A0703 /* OnboardingSlide.swift */; };
 		11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA1298147FE00022A3D /* AppDelegate.swift */; };
 		11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA3298147FE00022A3D /* SceneDelegate.swift */; };
 		11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EDDEAA2981480000022A3D /* Assets.xcassets */; };
@@ -17,9 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114B29B629828E2600BA5455 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		114B29B729828E2600BA5455 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		119C84B6298269E3007A0703 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		119C84B7298269E3007A0703 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-VariableFont_wght.ttf"; path = "assets/Rubik-VariableFont_wght.ttf"; sourceTree = SOURCE_ROOT; };
+		119C84BD29827C35007A0703 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		11EDDE9E298147FE00022A3D /* Quezzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quezzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EDDEA1298147FE00022A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EDDEA3298147FE00022A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,10 +56,28 @@
 		119C84B5298269AC007A0703 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				119C84C129828DB6007A0703 /* OnboardingCell */,
 				119C84B6298269E3007A0703 /* OnboardingViewController.swift */,
 				119C84B7298269E3007A0703 /* OnboardingViewController.xib */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		119C84BC29827C22007A0703 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				119C84BD29827C35007A0703 /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		119C84C129828DB6007A0703 /* OnboardingCell */ = {
+			isa = PBXGroup;
+			children = (
+				114B29B629828E2600BA5455 /* OnboardingCollectionViewCell.swift */,
+				114B29B729828E2600BA5455 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = OnboardingCell;
 			sourceTree = "<group>";
 		};
 		11EDDE95298147FE00022A3D = {
@@ -75,6 +99,7 @@
 		11EDDEA0298147FE00022A3D /* Quezzy */ = {
 			isa = PBXGroup;
 			children = (
+				119C84BC29827C22007A0703 /* Models */,
 				119C84B4298269A6007A0703 /* Scenes */,
 				11EDDEA1298147FE00022A3D /* AppDelegate.swift */,
 				11EDDEA3298147FE00022A3D /* SceneDelegate.swift */,
@@ -148,6 +173,7 @@
 				11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */,
 				119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */,
 				119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */,
+				114B29B929828E2600BA5455 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */,
 				11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */,
+				114B29B829828E2600BA5455 /* OnboardingCollectionViewCell.swift in Sources */,
 				119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */,
 				11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */,
 			);
