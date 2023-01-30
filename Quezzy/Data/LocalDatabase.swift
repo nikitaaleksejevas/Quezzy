@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct LocalDatabase {
+    
+    static var localDB: [Account] = []
+    
+}
