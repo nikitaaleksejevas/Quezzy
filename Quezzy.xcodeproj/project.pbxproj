@@ -19,6 +19,9 @@
 		119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C84BD29827C35007A0703 /* OnboardingSlide.swift */; };
 		11B1C78C2987CD570065958D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1C78A2987CD570065958D /* HomeViewController.swift */; };
 		11B1C78D2987CD570065958D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B1C78B2987CD570065958D /* HomeViewController.xib */; };
+		11B1C7902987CDFB0065958D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1C78F2987CDFB0065958D /* Account.swift */; };
+		11B1C7932987CFBF0065958D /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1C7922987CFBF0065958D /* AccountManager.swift */; };
+		11B1C7962987CFD60065958D /* LocalDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1C7952987CFD60065958D /* LocalDatabase.swift */; };
 		11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA1298147FE00022A3D /* AppDelegate.swift */; };
 		11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA3298147FE00022A3D /* SceneDelegate.swift */; };
 		11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EDDEAA2981480000022A3D /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		119C84BD29827C35007A0703 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		11B1C78A2987CD570065958D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		11B1C78B2987CD570065958D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		11B1C78F2987CDFB0065958D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		11B1C7922987CFBF0065958D /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		11B1C7952987CFD60065958D /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
 		11EDDE9E298147FE00022A3D /* Quezzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quezzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EDDEA1298147FE00022A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EDDEA3298147FE00022A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				119C84BD29827C35007A0703 /* OnboardingSlide.swift */,
+				11B1C78F2987CDFB0065958D /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +129,22 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		11B1C7912987CFB10065958D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				11B1C7922987CFBF0065958D /* AccountManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		11B1C7942987CFC80065958D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11B1C7952987CFD60065958D /* LocalDatabase.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		11EDDE95298147FE00022A3D = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +164,8 @@
 		11EDDEA0298147FE00022A3D /* Quezzy */ = {
 			isa = PBXGroup;
 			children = (
+				11B1C7942987CFC80065958D /* Data */,
+				11B1C7912987CFB10065958D /* Managers */,
 				119C84BC29827C22007A0703 /* Models */,
 				119C84B4298269A6007A0703 /* Scenes */,
 				11EDDEA1298147FE00022A3D /* AppDelegate.swift */,
@@ -232,8 +257,11 @@
 				114B29BD2982A5E200BA5455 /* LoginViewController.swift in Sources */,
 				119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */,
 				11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */,
+				11B1C7962987CFD60065958D /* LocalDatabase.swift in Sources */,
 				11B1C78C2987CD570065958D /* HomeViewController.swift in Sources */,
 				114B29B829828E2600BA5455 /* OnboardingCollectionViewCell.swift in Sources */,
+				11B1C7932987CFBF0065958D /* AccountManager.swift in Sources */,
+				11B1C7902987CDFB0065958D /* Account.swift in Sources */,
 				114B29C12982A60000BA5455 /* RegistrationViewController.swift in Sources */,
 				119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */,
 				11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */,
