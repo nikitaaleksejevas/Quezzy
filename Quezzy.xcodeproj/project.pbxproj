@@ -17,6 +17,8 @@
 		119C84B9298269E3007A0703 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119C84B7298269E3007A0703 /* OnboardingViewController.xib */; };
 		119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */; };
 		119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C84BD29827C35007A0703 /* OnboardingSlide.swift */; };
+		11B1C78C2987CD570065958D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1C78A2987CD570065958D /* HomeViewController.swift */; };
+		11B1C78D2987CD570065958D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B1C78B2987CD570065958D /* HomeViewController.xib */; };
 		11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA1298147FE00022A3D /* AppDelegate.swift */; };
 		11EDDEA4298147FE00022A3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDDEA3298147FE00022A3D /* SceneDelegate.swift */; };
 		11EDDEAB2981480000022A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11EDDEAA2981480000022A3D /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		119C84B7298269E3007A0703 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		119C84BA29826D44007A0703 /* Rubik-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-VariableFont_wght.ttf"; path = "assets/Rubik-VariableFont_wght.ttf"; sourceTree = SOURCE_ROOT; };
 		119C84BD29827C35007A0703 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		11B1C78A2987CD570065958D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		11B1C78B2987CD570065958D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		11EDDE9E298147FE00022A3D /* Quezzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quezzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EDDEA1298147FE00022A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EDDEA3298147FE00022A3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		119C84B4298269A6007A0703 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				11B1C78E2987CD5F0065958D /* Home */,
 				119C84B5298269AC007A0703 /* Onboarding */,
 				114B29C42982A61400BA5455 /* Registration */,
 				114B29BA2982A57F00BA5455 /* Login */,
@@ -106,6 +111,15 @@
 				114B29B729828E2600BA5455 /* OnboardingCollectionViewCell.xib */,
 			);
 			path = OnboardingCell;
+			sourceTree = "<group>";
+		};
+		11B1C78E2987CD5F0065958D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11B1C78A2987CD570065958D /* HomeViewController.swift */,
+				11B1C78B2987CD570065958D /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		11EDDE95298147FE00022A3D = {
@@ -204,6 +218,7 @@
 				119C84BB29826D44007A0703 /* Rubik-VariableFont_wght.ttf in Resources */,
 				114B29C22982A60000BA5455 /* RegistrationViewController.xib in Resources */,
 				114B29B929828E2600BA5455 /* OnboardingCollectionViewCell.xib in Resources */,
+				11B1C78D2987CD570065958D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +232,7 @@
 				114B29BD2982A5E200BA5455 /* LoginViewController.swift in Sources */,
 				119C84BE29827C35007A0703 /* OnboardingSlide.swift in Sources */,
 				11EDDEA2298147FE00022A3D /* AppDelegate.swift in Sources */,
+				11B1C78C2987CD570065958D /* HomeViewController.swift in Sources */,
 				114B29B829828E2600BA5455 /* OnboardingCollectionViewCell.swift in Sources */,
 				114B29C12982A60000BA5455 /* RegistrationViewController.swift in Sources */,
 				119C84B8298269E3007A0703 /* OnboardingViewController.swift in Sources */,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -27,13 +27,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OW-f2-j0R">
-                    <rect key="frame" x="175" y="104" width="64.333333333333314" height="28.666666666666657"/>
+                    <rect key="frame" x="177" y="108" width="60" height="28"/>
                     <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aYv-LS-Mjb">
-                    <rect key="frame" x="33" y="162.66666666666666" width="348" height="127.99999999999997"/>
+                    <rect key="frame" x="33" y="166" width="348" height="128"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUg-dX-taH">
                             <rect key="frame" x="0.0" y="0.0" width="348" height="56"/>
@@ -62,19 +62,19 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klq-X8-ijC">
-                    <rect key="frame" x="196.33333333333334" y="350.66666666666669" width="21.333333333333343" height="19"/>
+                    <rect key="frame" x="195.5" y="354" width="23.5" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Light_Regular" family="Rubik" pointSize="16"/>
                     <color key="textColor" red="0.52156862749999999" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTM-6C-sOX">
-                    <rect key="frame" x="30" y="410.66666666666669" width="102" height="19"/>
+                    <rect key="frame" x="30" y="414" width="103" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-nE-7td">
-                    <rect key="frame" x="33" y="439.66666666666669" width="348" height="56"/>
+                    <rect key="frame" x="33" y="443" width="348" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="9ML-ZZ-Z9B"/>
                     </constraints>
@@ -88,13 +88,13 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-MV-ZjA">
-                    <rect key="frame" x="33" y="511.66666666666674" width="70" height="19"/>
+                    <rect key="frame" x="33" y="515" width="71" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="LwP-6e-JXe">
-                    <rect key="frame" x="33" y="540.66666666666663" width="348" height="56"/>
+                    <rect key="frame" x="33" y="544" width="348" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="Pz9-tp-8BN"/>
                     </constraints>
@@ -108,7 +108,7 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL0-Cu-W7h">
-                    <rect key="frame" x="33" y="629.66666666666663" width="348" height="56"/>
+                    <rect key="frame" x="33" y="630" width="348" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="6er-te-dMc"/>
                     </constraints>
@@ -125,7 +125,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-ws-rh5">
-                    <rect key="frame" x="128.33333333333331" y="710.66666666666663" width="157.33333333333331" height="33"/>
+                    <rect key="frame" x="130" y="711" width="154" height="33"/>
                     <color key="tintColor" red="0.41568627450000001" green="0.35294117650000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Forgot password?">
@@ -136,13 +136,13 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, you agree to the Terms of Services &amp; Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-76-oNa">
-                    <rect key="frame" x="33" y="768.66666666666663" width="348" height="33.333333333333371"/>
+                    <rect key="frame" x="33" y="769" width="348" height="33"/>
                     <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-gn-Dqs">
-                    <rect key="frame" x="33" y="359.33333333333331" width="348" height="2"/>
+                    <rect key="frame" x="33" y="362.5" width="348" height="2"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NS-ut-Hs1">
                             <rect key="frame" x="0.0" y="0.0" width="150" height="2"/>
