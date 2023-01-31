@@ -9,6 +9,8 @@ import Foundation
 
 struct LocalDatabase {
     
-    static var localDB: [Account] = []
+    static var localDB: [Account] = [
+    Account(username: "nik", emailAddress: "nikas@gmail.com", password: "nik")
+    ]
     
 }

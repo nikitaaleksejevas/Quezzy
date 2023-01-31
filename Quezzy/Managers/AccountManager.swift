@@ -64,6 +64,10 @@ class AccountManager {
             username == registeredUser.username
         }
         
+        if password.isEmpty && username.isEmpty {
+            return LoginResult(errorMessage: "Username or password can not be empty", user: nil)
+        }
+        
         guard registeredUser?.username == username, registeredUser?.password == password else {
             return LoginResult(errorMessage: "Incorrect username or password", user: nil)
         }

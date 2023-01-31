@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,6 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Quezzy" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="bS9-nE-7td" id="TGZ-za-SVy"/>
+                <outlet property="errorMessageLabel" destination="UjY-RT-5Bo" id="mGN-hQ-VPO"/>
                 <outlet property="passwordTextField" destination="LwP-6e-JXe" id="odP-VK-KGT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,13 +29,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OW-f2-j0R">
-                    <rect key="frame" x="177" y="108" width="60" height="28"/>
+                    <rect key="frame" x="175" y="108" width="64.5" height="28.5"/>
                     <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aYv-LS-Mjb">
-                    <rect key="frame" x="33" y="166" width="348" height="128"/>
+                    <rect key="frame" x="33" y="166.5" width="348" height="128"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUg-dX-taH">
                             <rect key="frame" x="0.0" y="0.0" width="348" height="56"/>
@@ -62,19 +64,19 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klq-X8-ijC">
-                    <rect key="frame" x="195.5" y="354" width="23.5" height="19"/>
+                    <rect key="frame" x="196.5" y="354.5" width="21.5" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Light_Regular" family="Rubik" pointSize="16"/>
                     <color key="textColor" red="0.52156862749999999" green="0.51764705879999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTM-6C-sOX">
-                    <rect key="frame" x="30" y="414" width="103" height="19"/>
+                    <rect key="frame" x="30" y="414.5" width="102" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="bS9-nE-7td">
-                    <rect key="frame" x="33" y="443" width="348" height="56"/>
+                    <rect key="frame" x="33" y="443.5" width="348" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="9ML-ZZ-Z9B"/>
                     </constraints>
@@ -88,13 +90,13 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-MV-ZjA">
-                    <rect key="frame" x="33" y="515" width="71" height="19"/>
+                    <rect key="frame" x="33" y="515.5" width="70" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="LwP-6e-JXe">
-                    <rect key="frame" x="33" y="544" width="348" height="56"/>
+                    <rect key="frame" x="33" y="544.5" width="348" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="Pz9-tp-8BN"/>
                     </constraints>
@@ -108,7 +110,7 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rL0-Cu-W7h">
-                    <rect key="frame" x="33" y="630" width="348" height="56"/>
+                    <rect key="frame" x="33" y="634.5" width="348" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="6er-te-dMc"/>
                     </constraints>
@@ -125,7 +127,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1O-ws-rh5">
-                    <rect key="frame" x="130" y="711" width="154" height="33"/>
+                    <rect key="frame" x="128.5" y="710.5" width="157.5" height="33"/>
                     <color key="tintColor" red="0.41568627450000001" green="0.35294117650000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Forgot password?">
@@ -136,13 +138,13 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, you agree to the Terms of Services &amp; Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-76-oNa">
-                    <rect key="frame" x="33" y="769" width="348" height="33"/>
+                    <rect key="frame" x="33" y="768.5" width="348" height="33.5"/>
                     <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-gn-Dqs">
-                    <rect key="frame" x="33" y="362.5" width="348" height="2"/>
+                    <rect key="frame" x="33" y="363" width="348" height="2"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NS-ut-Hs1">
                             <rect key="frame" x="0.0" y="0.0" width="150" height="2"/>
@@ -158,6 +160,12 @@
                         <constraint firstItem="1LI-G5-4n8" firstAttribute="leading" secondItem="u0j-gn-Dqs" secondAttribute="leading" constant="198" id="jd4-JH-2d2"/>
                     </constraints>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjY-RT-5Bo">
+                    <rect key="frame" x="186" y="602.5" width="42" height="19"/>
+                    <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="16"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.93725490570000003" green="0.93333339689999995" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -165,6 +173,7 @@
                 <constraint firstItem="A1O-ws-rh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3y9-Mf-p9m"/>
                 <constraint firstItem="LwP-6e-JXe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="6MV-eG-H0Q"/>
                 <constraint firstItem="u0j-gn-Dqs" firstAttribute="top" secondItem="aYv-LS-Mjb" secondAttribute="bottom" constant="68.5" id="7G9-9L-cuJ"/>
+                <constraint firstItem="UjY-RT-5Bo" firstAttribute="top" secondItem="LwP-6e-JXe" secondAttribute="bottom" constant="2" id="9aW-Kt-kYl"/>
                 <constraint firstItem="QUy-MV-ZjA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="CbA-Mx-059"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cQ8-76-oNa" secondAttribute="bottom" constant="60" id="E2E-J7-jGl"/>
                 <constraint firstItem="bS9-nE-7td" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="Hf6-0P-WDK"/>
@@ -182,13 +191,14 @@
                 <constraint firstItem="6OW-f2-j0R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cnd-I5-hYd"/>
                 <constraint firstAttribute="trailing" secondItem="u0j-gn-Dqs" secondAttribute="trailing" constant="33" id="hJh-Ac-IQu"/>
                 <constraint firstItem="cQ8-76-oNa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="hMV-ot-8hh"/>
+                <constraint firstItem="UjY-RT-5Bo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iLr-qq-xZa"/>
                 <constraint firstItem="LwP-6e-JXe" firstAttribute="top" secondItem="QUy-MV-ZjA" secondAttribute="bottom" constant="10" id="iiO-2S-Xa0"/>
                 <constraint firstItem="u0j-gn-Dqs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="jO6-BA-Xtx"/>
                 <constraint firstItem="cQ8-76-oNa" firstAttribute="top" secondItem="A1O-ws-rh5" secondAttribute="bottom" constant="25" id="jRH-3f-Ia4"/>
                 <constraint firstItem="aYv-LS-Mjb" firstAttribute="top" secondItem="6OW-f2-j0R" secondAttribute="bottom" constant="30" id="mWo-Rd-rpy"/>
                 <constraint firstAttribute="trailing" secondItem="cQ8-76-oNa" secondAttribute="trailing" constant="33" id="nuB-Dm-x7X"/>
                 <constraint firstItem="qTM-6C-sOX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pjN-AQ-Tr1"/>
-                <constraint firstItem="A1O-ws-rh5" firstAttribute="top" secondItem="rL0-Cu-W7h" secondAttribute="bottom" constant="25" id="tAc-Iy-IJP"/>
+                <constraint firstItem="A1O-ws-rh5" firstAttribute="top" secondItem="rL0-Cu-W7h" secondAttribute="bottom" constant="20" id="tAc-Iy-IJP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aYv-LS-Mjb" secondAttribute="trailing" constant="33" id="xwJ-Wh-dJ4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LwP-6e-JXe" secondAttribute="trailing" constant="33" id="yXH-cP-Nej"/>
             </constraints>
@@ -198,5 +208,8 @@
     <resources>
         <image name="fb" width="20" height="20"/>
         <image name="google" width="21" height="20"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

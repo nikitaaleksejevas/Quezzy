@@ -14,6 +14,8 @@ class RegistrationViewController: UIViewController {
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var confirmPasswordTextField: UITextField!
+    @IBOutlet private weak var errorMessageLabel: UILabel!
+    
     
     //MARK: -Properties
     
@@ -23,6 +25,8 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorMessageLabel.isHidden = true
+
 
         // Do any additional setup after loading the view.
     }
@@ -34,6 +38,8 @@ class RegistrationViewController: UIViewController {
         let result = accountManager.register(username: usernameTextField.text!, emailAddress: emailTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
         
         if let errorMessage = result.errorMessage {
+            errorMessageLabel.text = errorMessage
+            errorMessageLabel.isHidden = false
             print(errorMessage)
         } else {
             registrationSuccessful(account: result.user!)

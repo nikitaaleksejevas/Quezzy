@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,6 +19,7 @@
             <connections>
                 <outlet property="confirmPasswordTextField" destination="RAs-Js-qdd" id="Clg-uR-Qpk"/>
                 <outlet property="emailTextField" destination="frv-OH-XcQ" id="Jse-AL-I4r"/>
+                <outlet property="errorMessageLabel" destination="HgZ-mX-zcR" id="4R5-ir-wcp"/>
                 <outlet property="passwordTextField" destination="lux-eX-le1" id="VJO-49-y7e"/>
                 <outlet property="usernameTextField" destination="B45-rb-hWV" id="ioS-tu-Rym"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -122,7 +124,7 @@
                         <action selector="signupTapped:" destination="-1" eventType="touchUpInside" id="54D-aE-aGc"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B45-rb-hWV">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B45-rb-hWV">
                     <rect key="frame" x="33" y="194" width="324" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="RC5-q4-Dbs"/>
@@ -136,6 +138,12 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgZ-mX-zcR">
+                    <rect key="frame" x="174" y="569" width="42" height="19"/>
+                    <fontDescription key="fontDescription" name="Rubik-Light_Medium" family="Rubik" pointSize="16"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.93725490570000003" green="0.93333339689999995" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -162,6 +170,8 @@
                 <constraint firstItem="33U-li-wyT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="kVa-03-B1a"/>
                 <constraint firstAttribute="trailing" secondItem="5oc-o2-fLf" secondAttribute="trailing" constant="33" id="mgB-LI-Lpk"/>
                 <constraint firstItem="RAs-Js-qdd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="mvc-mw-xQL"/>
+                <constraint firstItem="HgZ-mX-zcR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oXi-Pw-0lw"/>
+                <constraint firstItem="HgZ-mX-zcR" firstAttribute="top" secondItem="RAs-Js-qdd" secondAttribute="bottom" constant="16" id="pJu-Wd-Cx6"/>
                 <constraint firstItem="B45-rb-hWV" firstAttribute="top" secondItem="IAE-dl-nYY" secondAttribute="bottom" constant="10" id="pth-AI-ufA"/>
                 <constraint firstItem="frv-OH-XcQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="33" id="rYK-yF-prz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lux-eX-le1" secondAttribute="trailing" constant="33" id="udW-hk-Oxq"/>
@@ -180,4 +190,9 @@
             <point key="canvasLocation" x="-300" y="-32"/>
         </label>
     </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
