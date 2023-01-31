@@ -14,7 +14,6 @@ class AccountManager {
         let user: Account?
     }
     
-    
     typealias BoolCompletion = (Bool) -> ()
     
 //    func register(account: Account, completion: BoolCompletion) {
@@ -33,8 +32,8 @@ class AccountManager {
             return LoginResult(errorMessage: "Username or password is empty", user: nil)
         }
         
-        guard LocalDatabase.localDB.contains(where: { registeredUser in
-            username == registeredUser.username
+        guard !LocalDatabase.localDB.contains(where: { registeredUser in
+            registeredUser.username == username
         }) else {
             return LoginResult(errorMessage: "Username already exists", user: nil)
         }
@@ -45,7 +44,7 @@ class AccountManager {
             return LoginResult(errorMessage: "Please enter valid Email Address", user: nil)
         }
         
-        if password.count < 8 && password == "12345678" {
+        guard password.count > 2, password != "12345678" else {
             return LoginResult(errorMessage: "Password should be at least 8 symbols", user: nil)
         }
         
@@ -59,5 +58,16 @@ class AccountManager {
         return LoginResult(errorMessage: nil, user: user)
     }
     
-    
+    func login(username: String, password: String) -> LoginResult {
+        
+        let registeredUser = LocalDatabase.localDB.first { registeredUser in
+            username == registeredUser.username
+        }
+        
+        guard registeredUser?.username == username, registeredUser?.password == password else {
+            return LoginResult(errorMessage: "Incorrect username or password", user: nil)
+        }
+        
+        return LoginResult(errorMessage: nil, user: registeredUser)
+    }
 }

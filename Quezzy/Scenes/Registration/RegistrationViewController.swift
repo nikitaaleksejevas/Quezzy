@@ -18,6 +18,7 @@ class RegistrationViewController: UIViewController {
     //MARK: -Properties
     
     let accountManager = AccountManager()
+    var account: Account?
     
     
     override func viewDidLoad() {
@@ -29,8 +30,22 @@ class RegistrationViewController: UIViewController {
     //MARK: -Actions
     
     @IBAction private func signupTapped(_ sender: Any) {
+        
+        let result = accountManager.register(username: usernameTextField.text!, emailAddress: emailTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
+        
+        if let errorMessage = result.errorMessage {
+            print(errorMessage)
+        } else {
+            registrationSuccessful(account: result.user!)
+            print("Registered")
+        }
    
     }
     
+    //MARK: -Functions
+    private func registrationSuccessful(account: Account) {
+        let homeVC = HomeViewController()
+        present(homeVC, animated: true)
+    }
     
 }
